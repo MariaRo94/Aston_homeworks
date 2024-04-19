@@ -1,14 +1,16 @@
+
+/*1. Создайте метод printThreeWords(), который при
+вызове должен отпечатать в столбец три слова:
+Orange, Banana, Apple.
+ */
 public class Main {
     public static void main(String[] args) {
-       int [] array = new int [10];
-
-
+        printThreeWords();
 
     }
-   public static void createArray(int [] array){
-       for (int i = 0; i <array.length ; i++) {
 
+    public static void printThreeWords() {
+        System.out.println("Orange\nBanana\nApple ");
 
-       }
-   }
+    }
 }
