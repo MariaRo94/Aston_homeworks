@@ -6,7 +6,7 @@
 public class Task13 {
     public static void main(String[] args) {
         int [][] result = doubleArray(10);
-        printArray(result);
+        printMatrix(result);
 
     }
 
@@ -24,7 +24,7 @@ public class Task13 {
         return array;
     }
 
-    public static void printArray(int[][] array) {
+    public static void printMatrix(int[][] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
                 System.out.print(array[i][j] + "\t");

@@ -10,8 +10,7 @@ public class Task6 {
         int toScan = scan.nextInt();
         if (toScan >= 0) {
             System.out.println("The number is positive");
-        }
-        else {
+        } else {
             System.out.println("The number is negative");
         }
 

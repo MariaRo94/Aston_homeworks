@@ -5,7 +5,8 @@ public class Task8 {
     public static void main(String[] args) {
         printStr("I love Java", 8);
     }
-    public static void printStr (String str, int a){
+
+    public static void printStr(String str, int a) {
         for (int i = 0; i < a; i++) {
             System.out.println(str);
         }

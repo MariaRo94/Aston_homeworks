@@ -4,7 +4,7 @@
 
 public class Task5 {
     public static void main(String[] args) {
-        System.out.println(checkNumber(5,77));
+        System.out.println(checkNumber(5, 77));
     }
 
     public static boolean checkNumber(int a, int b) {

@@ -8,10 +8,10 @@ import java.util.Arrays;
 public class Task14 {
 
     public static void main(String[] args) {
-        printArray(createArray(5,78));
+        printArray1(createArray1(5,78));
     }
 
-    public static int[] createArray(int len, int initialValue) {
+    public static int[] createArray1(int len, int initialValue) {
         int array[] = new int[len];
         for (int i = 0; i < len; i++) {
             array[i] = initialValue;
@@ -19,7 +19,7 @@ public class Task14 {
         return array;
     }
 
-    public static void printArray(int [] array) {
+    public static void printArray1(int [] array) {
         for (int i = 0; i < array.length; i++) {
            System.out.print(array[i]);
         }
