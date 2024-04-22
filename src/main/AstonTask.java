@@ -18,7 +18,7 @@ public class AstonTask {
         createMatrix();
         int [][] result = doubleArray(10);
         printMatrix(result);
-        printArray1(createArray1(5,7);
+        printArray1(createArray1(5,7));
 
     }
 
