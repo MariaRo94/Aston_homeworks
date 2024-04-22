@@ -57,8 +57,7 @@ public class AstonTask {
     }
 
     public static boolean checkNumber(int a, int b) {
-        int sum = a + b;
-        return sum >= 10 && sum <= 20;
+        return a+b >= 10 && a+b <= 20;
     }
 
     public static void scanNumber(int toScan) {
