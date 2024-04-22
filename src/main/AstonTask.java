@@ -9,7 +9,7 @@ public class AstonTask {
         printColor();
         compareNumbers();
         checkNumber(5, 77);
-        scanNumber();
+        scanNumber(-5);
         System.out.println(isPositive(7));
         printStr("I love Java", 5);
         System.out.println(leapYear(1994));
@@ -29,19 +29,18 @@ public class AstonTask {
     public static void checkSumSign() {
         int a = 7;
         int b = -22;
-        int sum = a + b;
-        if (sum >= 0) {
+        if (a+b >= 0) {
             System.out.println("Сумма положительная");
         } else System.out.println("Сумма отрицательная");
     }
 
     public static void printColor() {
-        int value = 87;
+        int value = 1111;
         if (value <= 0) {
             System.out.println("Красный");
         } else if (value >= 0 && value <= 100) {
             System.out.println("Желтый");
-        } else if (value >= 100) {
+        } else {
             System.out.println("Зеленый");
         }
     }
@@ -51,7 +50,7 @@ public class AstonTask {
         int b = 99;
         if (a >= b) {
             System.out.println("a>=b");
-        } else if (a < b) {
+        } else {
             System.out.println("a<b");
         }
 
@@ -62,9 +61,7 @@ public class AstonTask {
         return sum >= 10 && sum <= 20;
     }
 
-    public static void scanNumber() {
-        Scanner scan = new Scanner(System.in);
-        int toScan = scan.nextInt();
+    public static void scanNumber(int toScan) {
         if (toScan >= 0) {
             System.out.println("The number is positive");
         } else {
