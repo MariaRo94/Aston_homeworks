@@ -1,3 +1,5 @@
+
+/*Все 14 задач в одном классе и методе Main. Остальное в репозитории - задачи в разных классах*/
 import java.util.Scanner;
 
 public class AstonTask {
