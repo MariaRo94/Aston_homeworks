@@ -12,7 +12,7 @@ public class AstonTask {
         scanNumber(-5);
         System.out.println(isPositive(7));
         printStr("I love Java", 5);
-        System.out.println(leapYear(1994));
+        System.out.println(isLeapYear(1994));
         createArray();
         matrix();
         createMatrix();
@@ -79,7 +79,7 @@ public class AstonTask {
         }
     }
 
-    public static boolean leapYear(int year) {
+    public static boolean isLeapYear(int year) {
         return (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
     }
 
