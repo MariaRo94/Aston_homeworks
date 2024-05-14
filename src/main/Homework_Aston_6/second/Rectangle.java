@@ -1,8 +1,23 @@
 package Homework_Aston_6.second;
 
 public class Rectangle implements Shape {
+    private double a;
+    private double b;
+
     private String backgroundColor;
     private String boarderColor;
+
+    public Rectangle(double a, double b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public Rectangle(double a, double b, String backgroundColor, String boarderColor) {
+        this.a = a;
+        this.b = b;
+        this.backgroundColor = backgroundColor;
+        this.boarderColor = boarderColor;
+    }
 
     public String getBackgroundColor() {
         return backgroundColor;
@@ -20,17 +35,13 @@ public class Rectangle implements Shape {
         this.boarderColor = boarderColor;
     }
 
-    //P = 2(a + b)
-
-    //S = a · b
-
     @Override
-    public Double calculatePerimeter() {
-        return 0.0;
+    public double perimeter() {
+        return 2 * (a + b);
     }
 
     @Override
-    public Double calculateSquare() {
-        return 0.0;
+    public double area() {
+        return a * b;
     }
 }

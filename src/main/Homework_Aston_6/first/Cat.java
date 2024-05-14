@@ -32,8 +32,9 @@ public class Cat extends Animal {
     }
 
     @Override
-    public void eat(int eatAmount) { //fix
-        super.eat(eatAmount);
+    public boolean eat(int eatAmount, int leftFood) {
+        isFeed = super.eat(eatAmount, leftFood);
+        return isFeed;
     }
 
     public boolean isFeed() {

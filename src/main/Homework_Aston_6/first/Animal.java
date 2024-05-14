@@ -58,15 +58,17 @@ public class Animal {
         this.foodAmount = foodAmount;
     }
 
-    public void eat(int eatAmount) {
-        if (eatAmount < 0) {
+    public boolean eat(int eatAmount, int leftFood) {
+        if (eatAmount < 0 || leftFood < 0) {
             throw new RuntimeException("Impossible to add this amount of food");
         }
 
-        if (eatAmount >= getFoodAmount()) {
+        if (eatAmount <= leftFood) {
             System.out.println(name + " поел, хватило еды");
+            return true;
         } else {
             System.out.println(name + " не поел, еды не хватило");
+            return false;
         }
     }
 

@@ -3,8 +3,9 @@ package Homework_Aston_6.first;
 import java.util.Random;
 
 public class Main {
+    public static int countOfFood = 45;
+
     public static void main(String[] args) {
-        int countOfFood = 50; // update food count with method
 
         Cat catJassy = new Cat("Jassy");
         catJassy.run(180);
@@ -29,8 +30,6 @@ public class Main {
         Dog dogHanny = new Dog("Hanny");
         dogHanny.run(355);
         dogHanny.swim(8);
-        //Создать массив котов и миску с едой, попросить всех котов покушать из этой миски и потом вывести информацию о сытости котов в консоль.
-        //Добавить метод, с помощью которого можно было бы добавлять еду в миску.
 
         Cat[] cats = new Cat[5];
         cats[0] = catKassy;
@@ -40,10 +39,18 @@ public class Main {
         cats[4] = catClassy;
 
         for (Cat cat : cats) {
-            int eatFood = new Random().nextInt(10);
-            cat.eat(//);
-            // update food
+            int eatFood = 10;
+            if (!cat.eat(eatFood, countOfFood)) {
+                updateCountOfFood(eatFood - countOfFood);
+                System.out.println("Добавили в миску еще еды");
+                cat.eat(eatFood, countOfFood);
+            }
+            countOfFood = countOfFood - eatFood;
             System.out.println(cat.isFeed());
         }
+    }
+
+    public static void updateCountOfFood(int value) {
+        countOfFood = countOfFood + value;
     }
 }
