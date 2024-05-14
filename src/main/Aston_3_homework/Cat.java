@@ -1,3 +1,5 @@
+package Aston_3_homework;
+
 public class Cat {
     int age;
     String name;
